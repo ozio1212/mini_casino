@@ -11,6 +11,7 @@ Welcome to the Texto-Casino Dice Game! This is a simple console-based game where
 
 ## Games avalaible
 - **Dice Rolling**: Players can roll a specified number of dice (from 1 to 4) and need to choose if sum of thrown numbers will be even or not.
+-  **Roulette**: Players can play roulette and bet on colors or specific numbers.
 
 ## Requirements
 
