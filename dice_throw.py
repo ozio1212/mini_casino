@@ -2,6 +2,8 @@ import random
 import time
 
 def dice_throw(user_balance):
+
+    # Checking if everything is okay about bet and bet_type:
     print(f"Your current balance is: {round(user_balance,2)} $")
     bet_type = input("Do you want to bet on even or odd sum? (type 'even' or 'odd'): ")
 
@@ -14,6 +16,8 @@ def dice_throw(user_balance):
         print("You cannot bet more than your current balance.")
         return user_balance
 
+
+    # Game:
     throws = int(input("Choose the number of dice rolls (from 1 to 4): "))
     if throws < 1 or throws > 4:
         print("Please choose a number between 1 and 4.")
@@ -21,7 +25,7 @@ def dice_throw(user_balance):
 
     result = 0
     for i in range(throws):
-        print("A toss is in progress...")
+        print("A toss is in progress 🎲🎲🎲")
         time.sleep(1)
         roll = random.randint(1, 6)
         result += roll
@@ -34,6 +38,7 @@ def dice_throw(user_balance):
     print(f"Total result after {throws} throws: {result}")
     print("\n")
 
+    # Win check
     is_even = result % 2 == 0
 
     if (is_even and bet_type == 'even') or (not is_even and bet_type == 'odd'):
