@@ -1,6 +1,7 @@
 import dice_throw
 import balance
 import roulette
+import coin_toss as coin
 
 def games_menu():
     print("Welcome to Text-Casino!")
@@ -8,6 +9,7 @@ def games_menu():
     print("List of the available games:")
     print("1) Dice throw game 🎲")
     print("2) Roulette 🎡")
+    print("3) Coin toss 📀")
     print("5) Exit the casino (did you know 90% of gamblers quit just before they hit it big?)")
 
     game_choice = input("Please choose game you want to play, by entering the corresponding number: ")
@@ -25,7 +27,7 @@ def main():
         elif choice == '2':
             user_balance = roulette.play_roulette(user_balance)
         elif choice == '3':
-            print("PLACEHOLDER")
+            user_balance = coin.coin_toss(user_balance)
         elif choice == '4':
             print("PLACEHOLDER")
         elif choice == '5':
