@@ -1,6 +1,6 @@
-# Text-Casino Dice Game
+# Text-Casino Game
 
-Welcome to the Texto-Casino Dice Game! This is a simple console-based game where players can bet on the outcome of dice rolls. Players can choose to bet on whether the sum of the dice rolls will be even or odd, and their balance will be updated based on the outcome of their bets.
+Welcome to the Text-Casino Game! This is a simple console-based game where players can play different random games and multiply their money!
 
 ## Features
 
